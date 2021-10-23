@@ -9,11 +9,11 @@ module.exports = {
         res.send('FILMMMMMMMMMMMM');
     },
     detail: (req, res) => {
-        console.log(req.params.id)
-        let sql = 'SELECT * FROM film WHERE id = ?';
+        //console.log(req.params.id)
+        let sql = 'SELECT * FROM film WHERE film_id = ?';
         db.query(sql,[req.params.id], (err, response) => {
             if (err) throw err
-            console.log(response);
+            //console.log(response);
             res.json(response)
         });
     }

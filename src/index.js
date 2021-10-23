@@ -8,7 +8,7 @@ const route = require('./routes');
 //db.connect();
 
 const app = express();
-const port = 3306;
+const port = process.env.port || 3000;
 
 // route init
 route(app);
