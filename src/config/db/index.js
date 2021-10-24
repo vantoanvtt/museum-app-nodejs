@@ -4,7 +4,8 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "MyNewPass",
-    database: "sakila"
+    database: "sakila",
+    port: '3306'
   });
 
 async function connect() {
