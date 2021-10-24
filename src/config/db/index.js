@@ -1,11 +1,11 @@
 var mysql = require('mysql');
 
 var con = mysql.createConnection({
-    host: "localhost",
+    host: "127.0.0.1",
     user: "root",
     password: "MyNewPass",
     database: "sakila",
-    port: '3306'
+    port: "3306"
   });
 
 async function connect() {
